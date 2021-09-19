@@ -17,3 +17,13 @@ npm i reflect-metadata
 nest g class auth/auth.guard --no-spec
 npm i -D faker @types/faker
 docker-compose exec backend sh
+npm run seed:ambassadors
+nest g module product
+nest g controller product
+nest g service product
+nest g class product/entities/product.entity --no-spec
+nest g class product/dto/create-product.dto --no-spec
+nest g class product/dto/update-product.dto --no-spec
+npm i @nestjs/mapped-types
+docker-compose exec backend sh
+npm run seed:products
