@@ -35,3 +35,8 @@ nest g class order/entities/order.entity --no-spec
 nest g class order/entities/order-item.entity --no-spec
 docker-compose exec backend sh
 npm run seed:orders
+nest g module link
+nest g controller link
+nest g service link
+nest g class link/entities/link.entity --no-spec
+nest g module common
