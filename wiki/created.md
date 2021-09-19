@@ -27,3 +27,11 @@ nest g class product/dto/update-product.dto --no-spec
 npm i @nestjs/mapped-types
 docker-compose exec backend sh
 npm run seed:products
+nest g module order
+nest g controller order
+nest g service order
+nest g service order-item
+nest g class order/entities/order.entity --no-spec
+nest g class order/entities/order-item.entity --no-spec
+docker-compose exec backend sh
+npm run seed:orders

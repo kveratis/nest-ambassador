@@ -17,7 +17,7 @@ export class ProductController {
 
   @Get('admin/product')
   async all() {
-    return this.productService.find({});
+    return this.productService.find();
   }
 
   @Post('admin/product')

@@ -3,7 +3,7 @@ import { Repository } from 'typeorm';
 export abstract class AbstractService {
   protected constructor(protected readonly repository: Repository<any>) {}
 
-  async find(options) {
+  async find(options = {}) {
     return this.repository.find(options);
   }
 
