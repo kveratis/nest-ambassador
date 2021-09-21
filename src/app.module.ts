@@ -20,6 +20,7 @@ import { CommonModule } from './common/common.module';
       database: 'ambassador',
       autoLoadEntities: true,
       synchronize: true, //DISABLE THIS IN PRODUCTION
+      //logging: ['query', 'error'],
     }),
     UserModule,
     AuthModule,
